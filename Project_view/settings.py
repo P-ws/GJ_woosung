@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 env_list = dict()
 
-local_env = open(os.path.join(BASE_DIR, 'env'))
+local_env = open(os.path.join(BASE_DIR, '.env'))
 
 while True:
     line = local_env.readline()
