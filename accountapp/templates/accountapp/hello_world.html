@@ -3,8 +3,13 @@
 {%  block content %}
 
 
-    <div style="height: 20rem; background: aqua;margin: 2rem; border-radius: 1rem; font-size:2rem" >
+    <div style="margin:2rem; text-align: center;" >
         <h1>HTTP METHOD</h1>
+
+        <form action="/accounts/hello_world/" method="post">
+            {% csrf_token %}
+            <input type="submit"; class="btn btn-outline-dark rounded-pill px-5"; >
+        </form>
 
     <h3>{{ text }}</h3> 단순 변수 출력 할려면 쌍 중괄호
 
