@@ -11,4 +11,4 @@ def hello_world(request):
 
     else:
         return render(request, 'accountapp/hello_world.html'
-                      , context={'text': 'POST METHOD!'}) #이건 get으로 얻기
+                      , context={'text': 'GET METHOD!'}) #이건 get으로 얻기
