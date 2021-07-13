@@ -8,10 +8,11 @@
 
         <form action="/account/hello_world/" method="post">
             {% csrf_token %}
+            <input type="text" name="input_text">
             <input type="submit" class="btn btn-outline-dark rounded-pill px-5"; >
         </form>
 
-    <h3>{{ text }}</h3> 단순 변수 출력 할려면 쌍 중괄호
+        <h3>{{ model_instance }}</h3> 단순 변수 출력 할려면 쌍 중괄호
 
     </div>
 
