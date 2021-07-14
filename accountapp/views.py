@@ -35,3 +35,4 @@ class AccountCreateView(CreateView):
     # lazy 붙인이유: 바로나오는게 아니라 불러와줄때만 사용하기 위해
     success_url = reverse_lazy('accountapp:hello_world')
     template_name = 'accountapp/create.html'
+
