@@ -6,7 +6,7 @@ from accountapp.views import hello_world, AccountCreateView
 app_name = 'accountapp'
 
 urlpatterns = [
-    path('hello_world/', hello_world, name = 'hello_world'),
+    path('hello_world/', hello_world, name='hello_world'),
 
     #로그인(html까지 설정) 로그아웃 경로 설정
     path('login/', LoginView.as_view(template_name='accountapp/login.html'),
