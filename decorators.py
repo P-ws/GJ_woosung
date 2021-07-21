@@ -1,16 +1,21 @@
-
 def decorator(func):
-    def decorated(input_text):
-        print('함수 시작!')
-        func(input_text)
-        print('함수 끝!')
+    def decorated(a,b):
+        if a > 0 and b > 0:
+            return func(a,b)
+        else:
+            print('error')
     return decorated
 
 
 @decorator
-def hello_world(input_text):
-    print(input_text)
+def triangle(a, b):
+    return 1/2 * a * b
 
 
+@decorator
+def square(a, b):
+    return a*b
 
-hello_world('Hello World')
+res = triangle(10, -10)
+print(res)
+
